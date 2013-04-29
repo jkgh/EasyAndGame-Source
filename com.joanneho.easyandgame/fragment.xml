@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective">
+      </perspectiveExtension>
+   </extension>
+   
+   <!-- NewBaseGame Activity Wizard -->
+   <extension
+         point="org.eclipse.ui.newWizards">
+   
+      <wizard
+            canFinishEarly="false"
+            category="com.android.ide.eclipse.wizards.category"
+            class="com.joanneho.easyandgame.newBasegameactivity.NewBaseGameActivityWizard"
+            finalPerspective="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"
+            hasPages="true"
+            icon="res/newActivity-16x16.png"
+            id="com.joanneho.easyandgame.newbasegameactivity.NewBaseGameActivityWizard"
+            name="Android Base Game Activity"
+            preferredPerspectives="org.eclipse.jdt.ui.JavaPerspective"
+            project="false">
+      </wizard>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+            <newWizardShortcut
+               id="com.joanneho.easyandgame.newbasegameactivity.NewBaseGameActivityWizard" />
+      </perspectiveExtension>
+   </extension>
+
+
+   	
+   	<!-- Import AndEngine -->
+   	
+   <extension
+         point="org.eclipse.ui.newWizards">
+   
+      <wizard
+            canFinishEarly="false"
+            category="com.android.ide.eclipse.wizards.category"
+            class="com.joanneho.easyandgame.importAndEngine.ImportAndEngineWizard"
+            finalPerspective="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"
+            hasPages="true"
+            icon="res/importToWorkspace-16x16.png"
+            id="com.joanneho.easyandgame.importAndEngine.ImportAndEngineWizard"
+            name="Import AndEngine Library"
+            preferredPerspectives="org.eclipse.jdt.ui.JavaPerspective"
+            project="false">
+      </wizard>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+            <newWizardShortcut
+               id="com.joanneho.easyandgame.importAndEngine.ImportAndEngineWizard" />
+      </perspectiveExtension>
+   </extension>
+   
+   <!-- Adding Scene Manager Wizard -->
+   <extension
+         point="org.eclipse.ui.newWizards">
+   
+      <wizard
+            canFinishEarly="false"
+            category="com.android.ide.eclipse.wizards.category"
+            class="com.joanneho.easyandgame.addSceneManager.AddSceneManagerWizard"
+            finalPerspective="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"
+            hasPages="true"
+            icon="res/sceneManagerImage_16x16.png"
+            id="com.joanneho.easyandgame.updatecode.AddSceneManagerWizard"
+            name="Add a SceneManager"
+            preferredPerspectives="org.eclipse.jdt.ui.JavaPerspective"
+            project="false">
+      </wizard>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+            <newWizardShortcut
+               id="com.joanneho.easyandgame.updatecode.AddSceneManagerWizard" />
+      </perspectiveExtension>
+   </extension>
+
+
+	<!-- toolbar -->
+   	<extension
+   		point="org.eclipse.ui.menus">
+   			<menuContribution
+   				locationURI="toolbar:org.eclipse.ui.main.toolbar">
+   					<toolbar
+   						id="AndEnginePlugin.toolbar">
+   							<command
+   								commandId="org.eclipse.ui.newWizard"
+   								icon="res/importToWorkspace-16x16.png"
+   								tooltip="Import AndEngine Toolbar">
+   									<parameter
+   										name="newWizardId"
+   										value="com.joanneho.easyandgame.importAndEngine.ImportAndEngineWizard" >
+   									</parameter>
+   							</command>
+   							<command
+   								commandId="org.eclipse.ui.newWizard"
+   								icon="res/newActivity-16x16.png"
+   								tooltip="New Base Game Activity" >
+   									<parameter
+   										name="newWizardId"
+   										value="com.joanneho.easyandgame.newbasegameactivity.NewBaseGameActivityWizard" >
+   									</parameter>
+   							</command>
+   							<command
+   								commandId="org.eclipse.ui.newWizard"
+   								icon="res/sceneManagerImage_16x16.png"
+   								tooltip="Add a SceneManager" >
+   									<parameter
+   										name="newWizardId"
+   										value="com.joanneho.easyandgame.updatecode.AddSceneManagerWizard" >
+   									</parameter>
+   							</command> 
+							
+   					</toolbar>
+   			</menuContribution>
+   	</extension>
+	<!-- end of toolbar-->   	
+</fragment>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: com.joanneho.easyandgame.xml
+Bundle-SymbolicName: com.joanneho.easyandgame.xml
+Bundle-Version: 0.1.0.201304281813
+Bundle-ClassPath: com.joanneho.easyandgame.xml_0.1.0.201304281813.jar
+Bundle-Vendor: JOANNEHO
+Export-Package: com.joanneho.easyandgame.xml
+Require-Bundle: org.scala-ide.scala.library;bundle-version="2.9.3"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.osgi.framework;version="1.5.0"

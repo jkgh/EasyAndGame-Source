@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.joanneho.easyandgame.feature"
+      label="EasyAndGameFeature"
+      version="1.0.0.qualifier"
+      provider-name="JOANNEHO">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="com.joanneho.easyandgame"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.qualifier"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="org.scala-ide.scala.library"
+         download-size="0"
+         install-size="0"
+         version="2.9.3.v20130201-111002-58961c7455"
+         unpack="false"/>
+
+   <plugin
+         id="com.joanneho.easyandgame.xml"
+         download-size="0"
+         install-size="0"
+         version="0.1.0.201304281813"/>
+
+</feature>
